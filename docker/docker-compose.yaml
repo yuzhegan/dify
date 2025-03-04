@@ -647,7 +647,7 @@ services:
       - web
     ports:
       - '${EXPOSE_NGINX_PORT:-80}:${NGINX_PORT:-80}'
-      - '${EXPOSE_NGINX_SSL_PORT:-8443}:${NGINX_SSL_PORT:-8443}'
+      # 完全禁用HTTPS端口映射
 
   # The Weaviate vector store.
   weaviate:
